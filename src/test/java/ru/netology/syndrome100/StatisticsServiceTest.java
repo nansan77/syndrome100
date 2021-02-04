@@ -17,5 +17,21 @@ import static org.junit.jupiter.api.Assertions.*;
 
             assertEquals(expected, actual);
         }
+          @Test
+          void  findMaxtwo() {
+              StatisticsService service = new StatisticsService();
+              long[] incomesInBillions = {1,14,9,11,8,6,12};
+              long expected = 14;
+              long actual = service.findMax(incomesInBillions);
+              assertEquals(expected, actual);
+          }
+          @Test
+          void  findMaxthree() {
+              StatisticsService service = new StatisticsService();
+              long[] incomesInBillions = {50, 150, 222, 111, 187};
+              long expected = 222;
+              long actual = service.findMax(incomesInBillions);
+              assertEquals(expected, actual);
+          }
       }
 
